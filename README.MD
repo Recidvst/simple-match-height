@@ -9,7 +9,7 @@ e.g.
 // trigger matchheight
 function triggerMatchHeights(selector) {
   if (selector === undefined) return false;
-  const target = [].slice.call(document.querySelectorAll(selector));
+  const target = [...document.querySelectorAll(selector)];
   matchSomeHeights(target);
 }
 
